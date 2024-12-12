@@ -1,0 +1,37 @@
+ PetWell App: User Journey and Page Descriptions
+ 1. Home Page
+- Purpose: The starting point for users to begin their vet search journey. Tapping on the homepage leads to SearchVets page
+
+ 2. SearchVets Page
+- Purpose: Lets users specify how they want to search for vets—by city or pincode.
+- Features:  
+  - Search TextBox with Hint: A single input box where users enter either a city name or a pincode, with a hint prompting "Enter city or pincode."  
+  - Two Buttons:  
+    - City Button: Becomes clickable once the user enters valid text. Clicking it will initiate a search based on the city.  
+    - Pincode Button: Similarly, becomes active after valid input and filters results based on the pincode.  
+- Navigation:  
+  - After clicking either button, users are taken to the ResultsPage_filters where results are displayed according to city or pincode.
+
+ 3. ResultsPage_filters
+- Purpose: Displays a list of veterinarians based on the user's search criteria.
+- Features:  
+  - List of Vets: Shows a scrollable list of nearby veterinarians with essential details, including name, rating, and approximate distance.  
+  - Filter Buttons:  
+    - Distance: Filters results by the closest vets.  
+    - Rating: Filters vets based on user reviews and ratings.  
+    - Average Pricing: Sorts vets based on their affordability.  
+- Navigation:  
+  - Clicking any vet's name or profile in the list will navigate to the DetailsPage.
+
+ 4. DetailsPage
+- Purpose: Provides detailed information about a selected veterinarian.
+- Features:  
+  - Vet Profile: Displays the veterinarian's name, description,contact details, services offered, business hours and pricing.  
+ - Navigation:  
+  - Users can return to the ResultsPage_filters by using the back button or initiate another search via the menu.
+
+ 5. App Lifecycle and Additional Features
+- Pause/Resume: The app remembers user inputs and search state, allowing them to resume where they left off. For example, if a user navigates away from the app while on the ResultsPage_filters, they return to the same page with their filters intact.
+- User Privacy: No user accounts or personal information are required, ensuring user anonymity.
+- Offline Consideration: In future versions, cached results could support offline browsing of previously fetched vet profiles.
+This journey ensures a seamless flow for users, from searching for a vet to reviewing detailed profiles and making contact. 
